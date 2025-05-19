@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CasaOnline</title>
+  <!-- foglio CSS per normalizzare gli stili di default -->
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./assets/images/casa2.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header con navigazione -->
+  <header>
+    <nav class="navbar">
+
+      <a id="logo" href="/" title="CaseOnline homepage"><img src="./assets/images/casa2.png" alt="logo"></a>
+      <!-- <div class="nav-link-wrapper"> -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/garage.html">Vendi</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="pages/login.html" id="login-button-navbar">Accedi</a></li>
+      </ul>
+    <!-- </div>
+      <button class="hamburger" id="hamburger">&#9776;</button> -->
+    </nav>
+  </header>
+
+  <div class="hero">
+    <!-- <video autoplay muted loop playsinline class="hero-video">
+      <source src="/assets/images/video_hero.mp4" type="video/mp4">
+      Il tuo browser non supporta il video.
+    </video> -->
+    <div class="hero-box">
+    <h1 id="hero-box-text">Trova la casa dei tuoi sogni</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Città, indirizzo, zona...">
+      <button>Cerca</button>
+    </div>
+  </div>
+  </div>
+  <!-- Contenuto principale -->
+  <main>
+    <h1>CASE PER TE</h1>
+
+    <div class="card-container" id="cardContainer">
+      <!-- Le card verranno generate qui -->
+    </div>
+  </main>
+
+  <section id="contatti">
+    <h1>Contattaci</h1>
+    <p>Scrivici per qualsiasi dubbio o problema, ti risponderemo non appena possibile.</p>
+    <form action="" method="POST" id="form-contatti">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+    
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+    
+      <label for="messaggio">Messaggio:</label><br>
+      <textarea id="messaggio" name="messaggio" rows="5" cols="30"></textarea><br><br>
+    
+      <button type="submit">Invia</button>
+    </form>
+    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 CasaOnline. Tutti i diritti riservati. | <a href="#">Privacy</a> | <a href="#">Termini d'uso</a></p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

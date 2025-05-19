@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --colore-primario: #d9b99b;
+  --colore-hover: #594635;
+  --colore-font: #332416;
+  --colore-sfondo: #f5f2eb;
+  --colore-secondario: #AEA399;
+  --font-titolo : "Dela Gothic One", sans-serif;
+  --font-secondario : "DM Sans", sans-serif;
+}
+
+body {
+      margin: auto;
+      font-family: var(--font-secondario);
+      font-weight: 400;
+      background-color: var(--colore-sfondo); /* beige chiaro */
+  }
+
+  h1{
+      font-family: var(--font-titolo);
+      color: var(--colore-font);
+  }
+
+    main > h1{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+  }
+
+
+
+  .navbar {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 8vh; */
+  }
+  
+  .nav-links {
+    list-style: none;
+    gap: 7rem;
+    /* transform: translateX(100%); */
+  }
+
+  /* .nav-links.active{
+    transform: translateX(0);
+  } */
+
+  .nav-links a {
+    position: relative;
+    color: var(--colore-font);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+
+  /* #login-button-navbar{
+    border: 1px solid var(--colore-font);
+    border-radius: 10px;
+    font-style: italic;
+  } */
+
+  .nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--colore-font);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+  /* .hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-link-wrapper{
+    overflow: hidden;
+  } */
+
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* .hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  } */
+
+  form {
+    background-color: #fffdf6;
+    padding: 30px 70px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  input,
+  textarea {
+    margin: 0 auto;
+    width: 90%;
+    padding: 12px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--colore-sfondo);
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: var(--colore-primario); /* beige intenso */
+    outline: none;
+  }
+  
+  button {
+    background-color: var(--colore-primario);
+    color: #fff;
+    padding: 12px 20px;
+    margin: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c7a683;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--colore-hover); /* beige caldo */
+    
+  }
+
+  #logo img{
+    height: 200px;
+    width: 200px;
+  }
+
+  #logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  #contatti{
+    max-width: 1500px; /* opzionale: limita la larghezza su schermi grandi */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  /* stile breadcrumb */
+  .breadcrumb {
+  font-size: 16px;
+  padding: 10px;
+  background-color: var(--colore-primario);
+}
+
+.breadcrumb a, #contatti a {
+  color: var(--colore-font);
+  text-decoration: none;
+}
+
+#contatti a {
+  color: var(--colore-primario);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover, #contatti a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #555;
+}
+
+  #form-contatti{
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 30px;
+  }
+
+  #form-contatti > button {
+    margin: 0 auto;
+  }
+
+  .hero-box {
+    background-color: rgba(0, 0, 0, 0.6); /* sfondo semi-trasparente scuro */
+    padding: 60px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* ombra profonda */
+    backdrop-filter: blur(6px); /* effetto vetro satinato */
+    max-width: 600px;
+    margin: 40px;
+  }
+
+  #hero-box-text{
+    color: var(--colore-sfondo);
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    border-top: 2px solid var(--colore-font);
+    border-bottom: 2px solid var(--colore-font);
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 30px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-family: var(--font-titolo);
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    color: #555;
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    background-color: var(--colore-secondario);
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--colore-font);
+  }
+
+  .footer p{
+    color: var(--colore-font);
+  }
+  
+  .footer a:hover {
+    color: var(--colore-hover);
+  }
+  
+  .footer .social-links {
+    margin-top: 10px;
+  }

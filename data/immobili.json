@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "titolo": "Bilocale in vendita a Palermo",
+    "descrizione": "Luminoso appartamento con finiture moderne.",
+    "prezzo": 516769,
+    "superficie_mq": 122,
+    "locali": 3,
+    "bagni": 3,
+    "indirizzo": {
+      "via": "Via Garibaldi 45",
+      "città": "Palermo",
+      "cap": "65030"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 1967,
+    "stato": "Ottimo",
+    "tipologia": "Appartamento",
+    "immagine": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 2,
+    "titolo": "Casa indipendente in vendita a Roma",
+    "descrizione": "Attico con terrazzo panoramico.",
+    "prezzo": 599708,
+    "superficie_mq": 49,
+    "locali": 6,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Roma 66",
+      "città": "Roma",
+      "cap": "98653"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 1993,
+    "stato": "Buono",
+    "tipologia": "Appartamento",
+    "immagine": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 3,
+    "titolo": "Appartamento in vendita a Bologna",
+    "descrizione": "Casa indipendente in zona tranquilla.",
+    "prezzo": 740165,
+    "superficie_mq": 70,
+    "locali": 5,
+    "bagni": 2,
+    "indirizzo": {
+      "via": "Via Manzoni 63",
+      "città": "Bologna",
+      "cap": "31067"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 1974,
+    "stato": "Nuovo",
+    "tipologia": "Attico",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 4,
+    "titolo": "Appartamento in vendita a Verona",
+    "descrizione": "Ampio appartamento in zona centrale.",
+    "prezzo": 620132,
+    "superficie_mq": 101,
+    "locali": 5,
+    "bagni": 2,
+    "indirizzo": {
+      "via": "Via Roma 90",
+      "città": "Verona",
+      "cap": "48835"
+    },
+    "piano": 7,
+    "ascensore": true,
+    "anno_costruzione": 1997,
+    "stato": "Ottimo",
+    "tipologia": "Villetta",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 5,
+    "titolo": "Casa indipendente in vendita a Genova",
+    "descrizione": "Soluzione indipendente con garage.",
+    "prezzo": 533179,
+    "superficie_mq": 108,
+    "locali": 1,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Marconi 23",
+      "città": "Genova",
+      "cap": "92689"
+    },
+    "piano": 0,
+    "ascensore": true,
+    "anno_costruzione": 2020,
+    "stato": "Ottimo",
+    "tipologia": "Casa indipendente",
+    "immagine": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 6,
+    "titolo": "Villetta in vendita a Bologna",
+    "descrizione": "Loft open space con travi a vista.",
+    "prezzo": 687306,
+    "superficie_mq": 184,
+    "locali": 2,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Garibaldi 33",
+      "città": "Bologna",
+      "cap": "79970"
+    },
+    "piano": 7,
+    "ascensore": false,
+    "anno_costruzione": 1998,
+    "stato": "Nuovo",
+    "tipologia": "Casa indipendente",
+    "immagine": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 7,
+    "titolo": "Attico in vendita a Torino",
+    "descrizione": "Villetta con giardino ideale per famiglie.",
+    "prezzo": 93135,
+    "superficie_mq": 139,
+    "locali": 4,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Roma 78",
+      "città": "Torino",
+      "cap": "71937"
+    },
+    "piano": 0,
+    "ascensore": false,
+    "anno_costruzione": 1987,
+    "stato": "Ottimo",
+    "tipologia": "Attico",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 8,
+    "titolo": "Loft in vendita a Bari",
+    "descrizione": "Ampio appartamento in zona centrale.",
+    "prezzo": 778855,
+    "superficie_mq": 146,
+    "locali": 4,
+    "bagni": 3,
+    "indirizzo": {
+      "via": "Via Garibaldi 22",
+      "città": "Bari",
+      "cap": "24072"
+    },
+    "piano": 7,
+    "ascensore": true,
+    "anno_costruzione": 1964,
+    "stato": "Ristrutturato",
+    "tipologia": "Monolocale",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 9,
+    "titolo": "Attico in vendita a Torino",
+    "descrizione": "Casa indipendente in zona tranquilla.",
+    "prezzo": 272178,
+    "superficie_mq": 72,
+    "locali": 1,
+    "bagni": 2,
+    "indirizzo": {
+      "via": "Via Dante 9",
+      "città": "Torino",
+      "cap": "84466"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 2022,
+    "stato": "Da ristrutturare",
+    "tipologia": "Villetta",
+    "immagine": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 10,
+    "titolo": "Villetta in vendita a Genova",
+    "descrizione": "Loft open space con travi a vista.",
+    "prezzo": 777348,
+    "superficie_mq": 152,
+    "locali": 6,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Dante 44",
+      "città": "Genova",
+      "cap": "97532"
+    },
+    "piano": 5,
+    "ascensore": false,
+    "anno_costruzione": 1986,
+    "stato": "Da ristrutturare",
+    "tipologia": "Loft",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 11,
+    "titolo": "Appartamento in vendita a Genova",
+    "descrizione": "Bilocale comodo ai servizi pubblici.",
+    "prezzo": 87500,
+    "superficie_mq": 142,
+    "locali": 6,
+    "bagni": 2,
+    "indirizzo": {
+      "via": "Via Garibaldi 64",
+      "città": "Genova",
+      "cap": "73242"
+    },
+    "piano": 0,
+    "ascensore": true,
+    "anno_costruzione": 1967,
+    "stato": "Da ristrutturare",
+    "tipologia": "Monolocale",
+    "immagine": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 12,
+    "titolo": "Villetta in vendita a Bologna",
+    "descrizione": "Attico con terrazzo panoramico.",
+    "prezzo": 779851,
+    "superficie_mq": 85,
+    "locali": 2,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Dante 24",
+      "città": "Bologna",
+      "cap": "30236"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 1984,
+    "stato": "Ottimo",
+    "tipologia": "Casa indipendente",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 13,
+    "titolo": "Attico in vendita a Napoli",
+    "descrizione": "Attico con terrazzo panoramico.",
+    "prezzo": 578053,
+    "superficie_mq": 59,
+    "locali": 3,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Roma 8",
+      "città": "Napoli",
+      "cap": "83672"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 2010,
+    "stato": "Nuovo",
+    "tipologia": "Attico",
+    "immagine": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 14,
+    "titolo": "Casa indipendente in vendita a Milano",
+    "descrizione": "Villetta con giardino ideale per famiglie.",
+    "prezzo": 475750,
+    "superficie_mq": 175,
+    "locali": 3,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Manzoni 29",
+      "città": "Milano",
+      "cap": "37835"
+    },
+    "piano": 6,
+    "ascensore": true,
+    "anno_costruzione": 2000,
+    "stato": "Da ristrutturare",
+    "tipologia": "Loft",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 15,
+    "titolo": "Attico in vendita a Milano",
+    "descrizione": "Bilocale comodo ai servizi pubblici.",
+    "prezzo": 392587,
+    "superficie_mq": 67,
+    "locali": 4,
+    "bagni": 3,
+    "indirizzo": {
+      "via": "Via Manzoni 93",
+      "città": "Milano",
+      "cap": "98322"
+    },
+    "piano": 3,
+    "ascensore": true,
+    "anno_costruzione": 2020,
+    "stato": "Nuovo",
+    "tipologia": "Attico",
+    "immagine": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 16,
+    "titolo": "Bilocale in vendita a Napoli",
+    "descrizione": "Ampio appartamento in zona centrale.",
+    "prezzo": 653388,
+    "superficie_mq": 41,
+    "locali": 4,
+    "bagni": 3,
+    "indirizzo": {
+      "via": "Via Dante 98",
+      "città": "Napoli",
+      "cap": "29865"
+    },
+    "piano": 7,
+    "ascensore": true,
+    "anno_costruzione": 1991,
+    "stato": "Buono",
+    "tipologia": "Villetta",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  },
+  {
+    "id": 17,
+    "titolo": "Loft in vendita a Napoli",
+    "descrizione": "Immobili di prestigio in posizione strategica.",
+    "prezzo": 788680,
+    "superficie_mq": 159,
+    "locali": 1,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Dante 75",
+      "città": "Napoli",
+      "cap": "16371"
+    },
+    "piano": 5,
+    "ascensore": true,
+    "anno_costruzione": 1965,
+    "stato": "Ristrutturato",
+    "tipologia": "Monolocale",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 18,
+    "titolo": "Loft in vendita a Firenze",
+    "descrizione": "Casa indipendente in zona tranquilla.",
+    "prezzo": 491532,
+    "superficie_mq": 175,
+    "locali": 1,
+    "bagni": 3,
+    "indirizzo": {
+      "via": "Via Marconi 90",
+      "città": "Firenze",
+      "cap": "73341"
+    },
+    "piano": 5,
+    "ascensore": true,
+    "anno_costruzione": 2013,
+    "stato": "Nuovo",
+    "tipologia": "Attico",
+    "immagine": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 19,
+    "titolo": "Casa indipendente in vendita a Bari",
+    "descrizione": "Casa indipendente in zona tranquilla.",
+    "prezzo": 210707,
+    "superficie_mq": 174,
+    "locali": 3,
+    "bagni": 2,
+    "indirizzo": {
+      "via": "Via Roma 49",
+      "città": "Bari",
+      "cap": "95500"
+    },
+    "piano": 5,
+    "ascensore": false,
+    "anno_costruzione": 1978,
+    "stato": "Ottimo",
+    "tipologia": "Villetta",
+    "immagine": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+    "garage": false
+  },
+  {
+    "id": 20,
+    "titolo": "Bilocale in vendita a Bologna",
+    "descrizione": "Villetta con giardino ideale per famiglie.",
+    "prezzo": 146693,
+    "superficie_mq": 135,
+    "locali": 6,
+    "bagni": 1,
+    "indirizzo": {
+      "via": "Via Garibaldi 51",
+      "città": "Bologna",
+      "cap": "85810"
+    },
+    "piano": 0,
+    "ascensore": false,
+    "anno_costruzione": 1969,
+    "stato": "Buono",
+    "tipologia": "Loft",
+    "immagine": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60",
+    "garage": true
+  }
+]
