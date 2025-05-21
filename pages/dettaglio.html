@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>CasaOnline</title>
-        <!-- foglio CSS per normalizzare gli stili di default -->
-        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="./assets/images/casa2.png" type="image/png">
-      </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CasaOnline</title>
+  <!-- foglio CSS per normalizzare gli stili di default -->
+  <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="../assets/images/casa2.png" type="image/png">
+</head>
+
 <body>
-    <header>
-        <nav class="navbar">
-    
-          <a id="logo" href="/" title="CaseOnline homepage"><img src="./assets/images/casa2.png" alt="logo"></a>
-          <!-- <div class="nav-link-wrapper"> -->
-          <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/ascensore.html">Con ascensore</a></li>
-            <li><a href="pages/garage.html">Con garage</a></li>
-            <li><a href="#contatti">Contatti</a></li>
-          </ul>
-        <!-- </div>
-          <button class="hamburger" id="hamburger">&#9776;</button>
-        </nav> -->
-      </header>
+  <header>
+    <nav class="breadcrumb">
+      <a href="/">Torna alla home</a>
+    </nav>
+  </header>
 
+  <div class="container">
+    <h1 class="house-title" id="house-title">Caricamento...</h1>
+    <img id="house-image" class="house-image" src="" alt="Immagine dell'immobile">
 
+    <div class="tags" id="tags-container">
+      <!-- I tag verranno inseriti dinamicamente qui -->
+    </div>
+
+    <div class="details-container">
+      <div class="details-box">
+        <h2>Dettagli Immobile</h2>
+        <p class="feature">Prezzo: <span class="prezzo" id="prezzo">Caricamento...</span></p>
+        <p class="feature">Superficie: <span id="superficie">Caricamento...</span> mq</p>
+        <p class="feature">Locali: <span id="locali">Caricamento...</span></p>
+        <p class="feature">Bagni: <span id="bagni">Caricamento...</span></p>
+        <p class="feature">Piano: <span id="piano">Caricamento...</span></p>
+        <p class="feature">Ascensore: <span id="ascensore">Caricamento...</span></p>
+        <p class="feature">Garage: <span id="garage">Caricamento...</span></p>
+        <p class="feature">Anno costruzione: <span id="anno">Caricamento...</span></p>
+        <p class="feature">Stato: <span id="stato">Caricamento...</span></p>
+      </div>
+      <div class="details-box">
+        <h2>Ubicazione</h2>
+        <p class="feature">Indirizzo: <span id="via">Caricamento...</span></p>
+        <p class="feature">Città: <span id="citta">Caricamento...</span></p>
+        <p class="feature">CAP: <span id="cap">Caricamento...</span></p>
+        <h2>Descrizione</h2>
+        <p id="descrizione">Caricamento...</p>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/main.js">
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+
+    const casa = creaOggettoCasa(id);
+
+    // Funzione per creare un oggetto Casa da un indice specifico dell'array
+    function creaOggettoCasa(indice) {
+      // Verifico che l'indice sia valido
+      if (indice < 0 || indice >= caseDisponibili.length) {
+        throw new Error("Indice non valido");
+      }
+
+      const dati = datiImmobili[indice];
+
+      // Creo prima l'oggetto Indirizzo
+      const indirizzo = new Indirizzo(
+        dati.indirizzo.via,
+        dati.indirizzo.citta,
+        dati.indirizzo.cap
+      );
+
+      // Creo l'oggetto Casa con l'oggetto Indirizzo
+      const casa = new Casa(
+        dati.id,
+        dati.titolo,
+        dati.descrizione,
+        dati.prezzo,
+        dati.superficie_mq,
+        dati.locali,
+        dati.bagni,
+        indirizzo,
+        dati.piano,
+        dati.ascensore,
+        dati.anno_costruzione,
+        dati.stato,
+        dati.tipologia,
+        dati.immagine,
+        dati.garage
+      );
+
+      return casa;
+    }
+  </script>
 </body>
+
 </html>

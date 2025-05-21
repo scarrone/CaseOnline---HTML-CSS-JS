@@ -23,23 +23,27 @@ body {
       color: var(--colore-font);
   }
 
+  a {
+  color: var(--colore-secondario);
+  text-decoration: none;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+
     main > h1{
     display: flex;
     justify-content: center;
     font-size: 70px;
   }
 
-
-
   .navbar {
     background: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     color: white;
-    justify-content: space-around;
+    display: flex;
     align-items: center;
-    /* height: 8vh; */
+    justify-content: space-around;
   }
   
   .nav-links {
@@ -117,7 +121,7 @@ body {
   } */
 
   form {
-    background-color: #fffdf6;
+    background-color: var(--colore-primario);
     padding: 30px 70px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -148,10 +152,10 @@ body {
   }
   
   button {
-    background-color: var(--colore-primario);
+    background-color: var(--colore-font);
     color: #fff;
     padding: 12px 20px;
-    margin: 40px;
+    margin: 30px;
     border: none;
     font-weight: bold;
     font-size: 1rem;
@@ -160,11 +164,10 @@ body {
   }
   
   button:hover {
-    background-color: #c7a683;
+    background-color: var(--colore-hover);
   }
 
   nav ul {
-    list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
@@ -199,7 +202,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   /* stile breadcrumb */
@@ -208,30 +210,24 @@ body {
   padding: 10px;
   background-color: var(--colore-primario);
 }
-
-.breadcrumb a, #contatti a {
+.breadcrumb a{
   color: var(--colore-font);
-  text-decoration: none;
 }
 
 #contatti a {
   color: var(--colore-primario);
   text-decoration: none;
-}
-
-.breadcrumb a:hover, #contatti a:hover {
-  text-decoration: underline;
+  margin: 0 auto;
 }
 
 .breadcrumb span {
-  color: #555;
+  color: var(--colore-font);
 }
 
   #form-contatti{
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
-    margin: 30px;
   }
 
   #form-contatti > button {
@@ -239,16 +235,22 @@ body {
   }
 
   .hero-box {
-    background-color: rgba(0, 0, 0, 0.6); /* sfondo semi-trasparente scuro */
+    background-color: rgba(131, 100, 70, 0.6  ); /* sfondo semi-trasparente scuro */
     padding: 60px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* ombra profonda */
     backdrop-filter: blur(6px); /* effetto vetro satinato */
     max-width: 600px;
-    margin: 40px;
+    width: 100%;
+    margin: 50px;
   }
 
   #hero-box-text{
     color: var(--colore-sfondo);
+      text-shadow: 
+    -1px -1px 0 #000, /* Sopra-sinistra */
+    1px -1px 0 #000,  /* Sopra-destra */
+    -1px 1px 0 #000,  /* Sotto-sinistra */
+    1px 1px 0 #000;   /* Sotto-destra */
   }
   
   .card-container {
@@ -257,15 +259,30 @@ body {
     gap: 50px;
     justify-content: center;
     max-width: 1500px;
-    width: 100%;
     margin: 0 auto;
     padding: 60px 0;
-    border-top: 2px solid var(--colore-font);
-    border-bottom: 2px solid var(--colore-font);
+    position: relative;
+    /* border-top: 2px solid var(--colore-font);
+    border-bottom: 2px solid var(--colore-font); */
+  }
+
+  .card-container::after{
+    content: '';
+    background-color: var(--colore-font);
+    height: 4px;
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+  }
+
+  .card-link{
+    text-decoration: none;
+    color: inherit;
   }
 
   .card {
-    background-color: white;
+    background-color: var(--colore-primario);
     border-radius: 10px;
     width: 500px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -291,11 +308,12 @@ body {
   .card-title {
     font-size: 1.1rem;
     font-family: var(--font-titolo);
+    color: var(--colore-font);
     margin-bottom: 10px;
   }
 
   .card-description {
-    color: #555;
+    color: var(--colore-hover);
     font-size: 0.85rem;
   }
 
@@ -325,3 +343,20 @@ body {
   .footer .social-links {
     margin-top: 10px;
   }
+
+  @media screen and (max-width : 768px) {
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    header{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+}
