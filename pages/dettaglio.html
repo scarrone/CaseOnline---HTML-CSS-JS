@@ -50,48 +50,6 @@
     </div>
   </div>
   <script src="/assets/js/main.js">
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get("id"));
-
-    const casa = creaOggettoCasa(id);
-
-    // Funzione per creare un oggetto Casa da un indice specifico dell'array
-    function creaOggettoCasa(indice) {
-      // Verifico che l'indice sia valido
-      if (indice < 0 || indice >= caseDisponibili.length) {
-        throw new Error("Indice non valido");
-      }
-
-      const dati = datiImmobili[indice];
-
-      // Creo prima l'oggetto Indirizzo
-      const indirizzo = new Indirizzo(
-        dati.indirizzo.via,
-        dati.indirizzo.citta,
-        dati.indirizzo.cap
-      );
-
-      // Creo l'oggetto Casa con l'oggetto Indirizzo
-      const casa = new Casa(
-        dati.id,
-        dati.titolo,
-        dati.descrizione,
-        dati.prezzo,
-        dati.superficie_mq,
-        dati.locali,
-        dati.bagni,
-        indirizzo,
-        dati.piano,
-        dati.ascensore,
-        dati.anno_costruzione,
-        dati.stato,
-        dati.tipologia,
-        dati.immagine,
-        dati.garage
-      );
-
-      return casa;
-    }
   </script>
 </body>
 

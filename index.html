@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>CasaOnline</title>
   <!-- foglio CSS per normalizzare gli stili di default -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./assets/images/casa2.png" type="image/png">
 </head>
@@ -17,9 +18,12 @@
   <header>
     <nav class="navbar">
 
+      <div class="hamburger">
       <a id="logo" href="/" title="CaseOnline homepage"><img src="./assets/images/casa2.png" alt="logo"></a>
+      <span id="navToggler"><img src="https://img.icons8.com/?size=100&id=59832&format=png&color=000000" alt="hamburger"></span>
+      </div>
       <!-- <div class="nav-link-wrapper"> -->
-      <ul class="nav-links" id="navLinks">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="pages/garage.html">Vendi</a></li>
         <li><a href="#contatti">Contatti</a></li>
@@ -56,13 +60,13 @@
     <h1>Contattaci</h1>
     <p>Scrivici per qualsiasi dubbio o problema, ti risponderemo non appena possibile.</p>
     <form action="" method="POST" id="form-contatti">
-      <label for="nome">Nome:</label><br>
+      <label for="nome">Nome</label><br>
       <input type="text" id="nome" name="nome" required><br><br>
     
-      <label for="email">Email:</label><br>
+      <label for="email">Email</label><br>
       <input type="email" id="email" name="email" required><br><br>
     
-      <label for="messaggio">Messaggio:</label><br>
+      <label for="messaggio">Messaggio</label><br>
       <textarea id="messaggio" name="messaggio" rows="5" cols="30"></textarea><br><br>
     
       <button type="submit">Invia</button>
@@ -80,7 +84,8 @@
     </div>
   </footer>
   
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js" defer>
+  </script>
 </body>
 
 </html>

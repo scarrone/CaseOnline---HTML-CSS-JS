@@ -12,10 +12,10 @@
 }
 
 body {
-      margin: auto;
       font-family: var(--font-secondario);
       font-weight: 400;
       background-color: var(--colore-sfondo); /* beige chiaro */
+      margin: auto  ;
   }
 
   h1{
@@ -32,7 +32,7 @@ body {
   text-decoration: underline;
   }
 
-    main > h1{
+  main > h1{
     display: flex;
     justify-content: center;
     font-size: 70px;
@@ -44,12 +44,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   .nav-links {
     list-style: none;
-    gap: 7rem;
-    /* transform: translateX(100%); */
+    gap: 6rem;
+    margin: 30px;
   }
 
   /* .nav-links.active{
@@ -84,6 +85,12 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+#navToggler{
+  display: none;
+}
+
+
   /* .hamburger {
     font-size: 2rem;
     background: none;
@@ -100,14 +107,15 @@ body {
     background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80');
     background-size:cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh;  
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
+    text-align: center; 
+    position: relative; /* Aggiunto per stabilire un contesto di posizionamento */
+    overflow: hidden; /* Impedisce che gli elementi figli fuoriescano */
   }
 
   /* .hero-video{
@@ -121,10 +129,9 @@ body {
   } */
 
   form {
-    background-color: var(--colore-primario);
-    padding: 30px 70px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px 30px;
+    border: 1px solid var(--colore-font);
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
     max-width: 500px;
     width: 100%;
   }
@@ -191,17 +198,13 @@ body {
     width: 200px;
   }
 
-  #logo{
-    display: flex;
-    justify-content: center;
-  }
-
   #contatti{
     max-width: 1500px; /* opzionale: limita la larghezza su schermi grandi */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   /* stile breadcrumb */
@@ -230,18 +233,16 @@ body {
     width: 100%;
   }
 
-  #form-contatti > button {
-    margin: 0 auto;
-  }
-
   .hero-box {
-    background-color: rgba(131, 100, 70, 0.6  ); /* sfondo semi-trasparente scuro */
+    background-color: rgba(131, 100, 70, 0.6 ); /* sfondo semi-trasparente scuro */
     padding: 60px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* ombra profonda */
     backdrop-filter: blur(6px); /* effetto vetro satinato */
     max-width: 600px;
     width: 100%;
     margin: 50px;
+    box-sizing: border-box; /* Include padding e border nella larghezza */
+  position: relative; /* Posizionamento relativo */
   }
 
   #hero-box-text{
@@ -260,8 +261,8 @@ body {
     justify-content: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 60px 0;
-    position: relative;
+    padding: 60px 0; 
+    position: relative ;
     /* border-top: 2px solid var(--colore-font);
     border-bottom: 2px solid var(--colore-font); */
   }
@@ -283,8 +284,7 @@ body {
 
   .card {
     background-color: var(--colore-primario);
-    border-radius: 10px;
-    width: 500px;
+    max-width: 500px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
     overflow: hidden;
@@ -345,18 +345,48 @@ body {
   }
 
   @media screen and (max-width : 768px) {
-    body{
+
+    .nav-links{
+      gap: 3rem;
+      transform: translate(0);
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      margin: 10px;
+      margin-top: 0;
+    }
+
+    .hamburger{
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
-      justify-content: center;
       width: 100%;
     }
 
-    header{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
+    main{
+      padding: 50px;
     }
+    
+    #navToggler{
+      color: var(--colore-font);
+      display: flex;
+      height: 50px;
+    }
+
+    .nav-links.active{
+      display: flex;
+      transform: translateX(500%);
+    }
+    
+  #logo img{
+    height: 150px;
+    width: 150px;
+  }
+
+  /* .nav-links.active{
+
+  } */
+
+  .nav-links a {
+    padding: 5px;
+  }
+
 }
