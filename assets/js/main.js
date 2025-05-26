@@ -32,12 +32,18 @@ const isHomePage = location.pathname.endsWith('index.html') || location.pathname
 const isDetailPage = location.pathname.endsWith('dettaglio.html');
 const navLinks = document.querySelector('.nav-links');
 const navToggler = document.getElementById('navToggler');
+const navCloser = document.getElementById('navClose');
 
 if (document.body.contains(navToggler)) {
   navToggler.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+
+  navCloser.addEventListener('click', () => {
+    navLinks.classList.remove('active')
+  })
 }
+
 
 document.addEventListener('DOMContentLoaded', caricaCase);
 
