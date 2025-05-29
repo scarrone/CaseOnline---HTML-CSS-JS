@@ -1,21 +1,16 @@
-class Indirizzo{
-    constructor(via, citta, cap){
-        this.via = via;
-        this.citta = citta;
-        this.cap = cap;
-    }
-}
 
 class Casa{
-    constructor(id, titolo, descrizione, prezzo, superficie_mq, locali, bagni, indirizzo, piano, ascensore, anno_costruzione, stato, tipologia, immagine, garage) {
+    constructor(id, titolo, descrizione, prezzo, superficie_mq, locali, bagni, via, citta, cap, piano, ascensore, anno_costruzione, stato, tipologia, immagine, garage) {
   this.id = id;
   this.titolo = titolo;
   this.descrizione = descrizione;
   this.prezzo = prezzo;
   this.superficie_mq = superficie_mq;
   this.locali = locali;
+  this.via = via;
+  this.citta = citta;
+  this.cap = cap;
   this.bagni = bagni;
-  this.indirizzo = indirizzo; // oggetto con via, città, cap
   this.piano = piano;
   this.ascensore = ascensore;
   this.anno_costruzione = anno_costruzione;
@@ -75,7 +70,7 @@ async function caricaCase() {
   }
     })
     .catch(error => {
-      console.error('Errore:', error); S
+      console.error('Errore:', error);
     });
 }
 
@@ -89,14 +84,7 @@ function creaOggettoCasa(indice, caseDisponibili) {
 
   const dati = caseDisponibili[indice];
 
-  // Creo prima l'oggetto Indirizzo
-  const indirizzo = new Indirizzo(
-    dati.indirizzo.via,
-    dati.indirizzo.citta,
-    dati.indirizzo.cap
-  );
-
-  // Creo l'oggetto Casa con l'oggetto Indirizzo
+  // Creo l'oggetto Casa
   const casa = new Casa(
     dati.id,
     dati.titolo,
@@ -105,7 +93,9 @@ function creaOggettoCasa(indice, caseDisponibili) {
     dati.superficie_mq,
     dati.locali,
     dati.bagni,
-    indirizzo,
+    dati.via,
+    dati.citta,
+    dati.cap,
     dati.piano,
     dati.ascensore,
     dati.anno_costruzione,
@@ -132,9 +122,9 @@ function visualizzaDatiCasa(casa) {
   document.getElementById('anno').textContent = casa.anno_costruzione;
   document.getElementById('stato').textContent = casa.stato;
   document.getElementById('garage').textContent = casa.garage ? 'Sì' : 'No';
-  document.getElementById('via').textContent = casa.indirizzo.via;
-  document.getElementById('citta').textContent = casa.indirizzo.citta;
-  document.getElementById('cap').textContent = casa.indirizzo.cap;
+  document.getElementById('via').textContent = casa.via;
+  document.getElementById('citta').textContent = casa.citta;
+  document.getElementById('cap').textContent = casa.cap;
   document.getElementById('descrizione').textContent = casa.descrizione;
 
   if (casa.immagine) {

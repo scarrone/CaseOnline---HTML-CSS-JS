@@ -7,11 +7,9 @@
     "superficie_mq": 122,
     "locali": 3,
     "bagni": 3,
-    "indirizzo": {
-      "via": "Via Garibaldi 45",
-      "città": "Palermo",
-      "cap": "65030"
-    },
+    "via": "Via Garibaldi 45",
+    "città": "Palermo",
+    "cap": "65030",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 1967,
@@ -28,11 +26,9 @@
     "superficie_mq": 49,
     "locali": 6,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Roma 66",
-      "città": "Roma",
-      "cap": "98653"
-    },
+    "via": "Via Roma 66",
+    "città": "Roma",
+    "cap": "98653",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 1993,
@@ -49,11 +45,9 @@
     "superficie_mq": 70,
     "locali": 5,
     "bagni": 2,
-    "indirizzo": {
-      "via": "Via Manzoni 63",
-      "città": "Bologna",
-      "cap": "31067"
-    },
+    "via": "Via Manzoni 63",
+    "città": "Bologna",
+    "cap": "31067",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 1974,
@@ -70,11 +64,9 @@
     "superficie_mq": 101,
     "locali": 5,
     "bagni": 2,
-    "indirizzo": {
-      "via": "Via Roma 90",
-      "città": "Verona",
-      "cap": "48835"
-    },
+    "via": "Via Roma 90",
+    "città": "Verona",
+    "cap": "48835",
     "piano": 7,
     "ascensore": true,
     "anno_costruzione": 1997,
@@ -91,11 +83,9 @@
     "superficie_mq": 108,
     "locali": 1,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Marconi 23",
-      "città": "Genova",
-      "cap": "92689"
-    },
+    "via": "Via Marconi 23",
+    "città": "Genova",
+    "cap": "92689",
     "piano": 0,
     "ascensore": true,
     "anno_costruzione": 2020,
@@ -112,11 +102,9 @@
     "superficie_mq": 184,
     "locali": 2,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Garibaldi 33",
-      "città": "Bologna",
-      "cap": "79970"
-    },
+    "via": "Via Garibaldi 33",
+    "città": "Bologna",
+    "cap": "79970",
     "piano": 7,
     "ascensore": false,
     "anno_costruzione": 1998,
@@ -133,11 +121,9 @@
     "superficie_mq": 139,
     "locali": 4,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Roma 78",
-      "città": "Torino",
-      "cap": "71937"
-    },
+    "via": "Via Roma 78",
+    "città": "Torino",
+    "cap": "71937",
     "piano": 0,
     "ascensore": false,
     "anno_costruzione": 1987,
@@ -154,11 +140,9 @@
     "superficie_mq": 146,
     "locali": 4,
     "bagni": 3,
-    "indirizzo": {
-      "via": "Via Garibaldi 22",
-      "città": "Bari",
-      "cap": "24072"
-    },
+    "via": "Via Garibaldi 22",
+    "città": "Bari",
+    "cap": "24072",
     "piano": 7,
     "ascensore": true,
     "anno_costruzione": 1964,
@@ -175,11 +159,9 @@
     "superficie_mq": 72,
     "locali": 1,
     "bagni": 2,
-    "indirizzo": {
-      "via": "Via Dante 9",
-      "città": "Torino",
-      "cap": "84466"
-    },
+    "via": "Via Dante 9",
+    "città": "Torino",
+    "cap": "84466",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 2022,
@@ -196,11 +178,9 @@
     "superficie_mq": 152,
     "locali": 6,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Dante 44",
-      "città": "Genova",
-      "cap": "97532"
-    },
+    "via": "Via Dante 44",
+    "città": "Genova",
+    "cap": "97532",
     "piano": 5,
     "ascensore": false,
     "anno_costruzione": 1986,
@@ -217,11 +197,9 @@
     "superficie_mq": 142,
     "locali": 6,
     "bagni": 2,
-    "indirizzo": {
-      "via": "Via Garibaldi 64",
-      "città": "Genova",
-      "cap": "73242"
-    },
+    "via": "Via Garibaldi 64",
+    "città": "Genova",
+    "cap": "73242",
     "piano": 0,
     "ascensore": true,
     "anno_costruzione": 1967,
@@ -238,11 +216,9 @@
     "superficie_mq": 85,
     "locali": 2,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Dante 24",
-      "città": "Bologna",
-      "cap": "30236"
-    },
+    "via": "Via Dante 24",
+    "città": "Bologna",
+    "cap": "30236",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 1984,
@@ -259,11 +235,9 @@
     "superficie_mq": 59,
     "locali": 3,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Roma 8",
-      "città": "Napoli",
-      "cap": "83672"
-    },
+    "via": "Via Roma 8",
+    "città": "Napoli",
+    "cap": "83672",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 2010,
@@ -280,11 +254,9 @@
     "superficie_mq": 175,
     "locali": 3,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Manzoni 29",
-      "città": "Milano",
-      "cap": "37835"
-    },
+    "via": "Via Manzoni 29",
+    "città": "Milano",
+    "cap": "37835",
     "piano": 6,
     "ascensore": true,
     "anno_costruzione": 2000,
@@ -301,11 +273,9 @@
     "superficie_mq": 67,
     "locali": 4,
     "bagni": 3,
-    "indirizzo": {
-      "via": "Via Manzoni 93",
-      "città": "Milano",
-      "cap": "98322"
-    },
+    "via": "Via Manzoni 93",
+    "città": "Milano",
+    "cap": "98322",
     "piano": 3,
     "ascensore": true,
     "anno_costruzione": 2020,
@@ -322,11 +292,9 @@
     "superficie_mq": 41,
     "locali": 4,
     "bagni": 3,
-    "indirizzo": {
-      "via": "Via Dante 98",
-      "città": "Napoli",
-      "cap": "29865"
-    },
+    "via": "Via Dante 98",
+    "città": "Napoli",
+    "cap": "29865",
     "piano": 7,
     "ascensore": true,
     "anno_costruzione": 1991,
@@ -343,11 +311,9 @@
     "superficie_mq": 159,
     "locali": 1,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Dante 75",
-      "città": "Napoli",
-      "cap": "16371"
-    },
+    "via": "Via Dante 75",
+    "città": "Napoli",
+    "cap": "16371",
     "piano": 5,
     "ascensore": true,
     "anno_costruzione": 1965,
@@ -364,11 +330,9 @@
     "superficie_mq": 175,
     "locali": 1,
     "bagni": 3,
-    "indirizzo": {
-      "via": "Via Marconi 90",
-      "città": "Firenze",
-      "cap": "73341"
-    },
+    "via": "Via Marconi 90",
+    "città": "Firenze",
+    "cap": "73341",
     "piano": 5,
     "ascensore": true,
     "anno_costruzione": 2013,
@@ -385,11 +349,9 @@
     "superficie_mq": 174,
     "locali": 3,
     "bagni": 2,
-    "indirizzo": {
-      "via": "Via Roma 49",
-      "città": "Bari",
-      "cap": "95500"
-    },
+    "via": "Via Roma 49",
+    "città": "Bari",
+    "cap": "95500",
     "piano": 5,
     "ascensore": false,
     "anno_costruzione": 1978,
@@ -406,11 +368,9 @@
     "superficie_mq": 135,
     "locali": 6,
     "bagni": 1,
-    "indirizzo": {
-      "via": "Via Garibaldi 51",
-      "città": "Bologna",
-      "cap": "85810"
-    },
+    "via": "Via Garibaldi 51",
+    "città": "Bologna",
+    "cap": "85810",
     "piano": 0,
     "ascensore": false,
     "anno_costruzione": 1969,
