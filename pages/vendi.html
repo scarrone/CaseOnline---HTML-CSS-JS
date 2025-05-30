@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaseOnline</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="breadcrumb">
+            <a href="/">Torna alla home</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contatti">
+            <h1>Vendi la tua casa</h1>
+<form action="" method="POST" class="addcasa">
+    <label for="titolo">Titolo:</label>
+    <input type="text" name="titolo" id="titolo" required />
+
+    <label for="descrizione">Descrizione:</label>
+    <textarea name="descrizione" id="descrizione" rows="4" required></textarea>
+
+    <label for="prezzo">Prezzo (€):</label>
+    <input type="number" name="prezzo" id="prezzo" required />
+
+    <label for="superficieMq">Superficie (mq):</label>
+    <input type="number" name="superficieMq" id="superficieMq" required />
+
+    <label for="locali">Numero locali:</label>
+    <input type="number" name="locali" id="locali" required />
+
+    <label for="bagni">Numero bagni:</label>
+    <input type="number" name="bagni" id="bagni" required />
+
+    <label for="via">Via:</label>
+    <input type="text" name="via" id="via" required />
+
+    <label for="citta">Città:</label>
+    <input type="text" name="citta" id="citta" required />
+
+    <label for="cap">CAP:</label>
+    <input type="text" name="cap" id="cap" required />
+
+    <label for="piano">Piano:</label>
+    <input type="number" name="piano" id="piano" required />
+
+    <label for="ascensore">Ascensore:</label>
+    <select name="ascensore" id="ascensore" required>
+      <option value="true">Sì</option>
+      <option value="false">No</option>
+    </select>
+
+    <label for="annoCostruzione">Anno di costruzione:</label>
+    <input type="number" name="annoCostruzione" id="annoCostruzione" required />
+
+    <label for="stato">Stato immobile:</label>
+    <input type="text" name="stato" id="stato" required />
+
+    <label for="tipologia">Tipologia:</label>
+    <input type="text" name="tipologia" id="tipologia" required />
+
+    <label for="immagine">URL Immagine:</label>
+    <input type="url" name="immagine" id="immagine" required />
+
+    <label for="garage">Garage:</label>
+    <select name="garage" id="garage" required>
+      <option value="true">Sì</option>
+      <option value="false">No</option>
+    </select>
+
+    <button type="submit">Pubblica Annuncio</button>
+  </form>
+        </section>
+    </main>
 </body>
+
 </html>

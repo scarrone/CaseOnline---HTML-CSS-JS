@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', caricaCase);
 //prendiamo i dati dal JSON e creiamo dinamicamente le card
 async function caricaCase() {
   console.log('loading case', isDetailPage);
-  fetch('../data/immobili.json') // percorso del file JSON
+  fetch('http://localhost:8080/api/casa') // percorso del file JSON
     .then(response => {
       if (!response.ok) {
         throw new Error('Errore nel caricamento del file JSON');
